@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>results</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form_container mt-5 p-4">
+                <h2>Submitted Info:</h2>
+                <div>
+                    <label>Name: </label>
+                    <label>{{username}}</label>
+                </div>
+                <div>
+                    <label>Dojo Location: </label>
+                    <label>{{dojo}}</label>
+                </div>
+                <div>
+                    <label>Favorite Language: </label>
+                    <label>{{prog_lang}}</label>
+                </div>
+                <div>
+                    <label>Comment: </label>
+                    <label>{{user_com}}</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Go Back</button>
+            </div>
+        </div>
+    </body>
+</html>
